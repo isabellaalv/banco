@@ -1,0 +1,32 @@
+CREATE DATABASE InLock_Tarde;
+
+USE InLock_Tarde;
+
+CREATE TABLE TipoUsuario (
+	Id INT PRIMARY KEY IDENTITY,
+	Descricao VARCHAR (200),
+);
+
+
+CREATE TABLE Estudio (
+	Id INT PRIMARY KEY IDENTITY,
+	Descricao VARCHAR (200) NOT NULL
+);
+
+CREATE TABLE Jogos (
+	Id INT PRIMARY KEY IDENTITY,
+	NomeJogo VARCHAR (200) ,
+	Descricacao VARCHAR (200),
+	DataLancamento DATE,
+	Valor MONEY,
+	EstudioId INT FOREIGN KEY REFERENCES Estudio(Id)
+);
+
+CREATE TABLE Usuario (
+	Id INT PRIMARY KEY IDENTITY,
+	Email VARCHAR (200),
+	Senha VARCHAR (200),
+	TipoUsuarioId INT FOREIGN KEY REFERENCES TipoUsuario(Id)
+);
+
+
