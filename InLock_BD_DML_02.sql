@@ -15,7 +15,7 @@ VALUES ('admi@adim.com' , 'admin' , 1),
 ('cliente@cliente.com', 'cliente', 2);
 
 
-INSERT INTO Jogos (Nome, Descricacao, DataLancamento, Valor, EstudioId)
+INSERT INTO Jogos (Nome, Descricao, DataLancamento, Valor, EstudioId)
 VALUES ('Diablo 3', 'é um jogo que contém bastante ação e é
 viciante, seja você um novato ou um fã', '2012/05/15', 99.00, 1),
 ('Red Dead Redemption II', 'jogo eletrônico de ação-aventura western',

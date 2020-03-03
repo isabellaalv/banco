@@ -3,11 +3,11 @@ SELECT * FROM TiposUsuarios;
 SELECT * FROM Estudios;
 SELECT * FROM Jogos;
 
-SELECT Jogos.Nome, Jogos.Descricacao, Estudios.Descricao AS NomeEstudio
+SELECT Jogos.Nome, Jogos.Descricao, Estudios.Descricao AS NomeEstudio
 FROM Jogos
 INNER JOIN Estudios ON Estudios.Id = Jogos.EstudioId;
 
-SELECT Jogos.Nome, Jogos.Descricacao, Estudios.Descricao AS NomeEstudio
+SELECT Jogos.Nome, Jogos.Descricao, Estudios.Descricao AS NomeEstudio
 FROM Estudios
 LEFT JOIN Jogos ON Jogos.Id = Estudios.Id;
 
